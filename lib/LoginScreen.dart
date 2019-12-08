@@ -50,13 +50,18 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: 25.0,
             ),
-            Container(
-              color: Colors.grey,
-              height: 50.0,
-              width: MediaQuery.of(context).size.width,
-              child:Center(
-                child: Text("Login"),
-              ) ,
+            GestureDetector(
+                child: Container(
+                color: Colors.grey,
+                height: 50.0,
+                width: MediaQuery.of(context).size.width,
+                child:Center(
+                  child: Text("Login"),
+                ) ,
+              ),
+              onTap: (){
+                
+              },
             ),
             SizedBox(
               height: 25.0,

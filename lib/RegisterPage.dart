@@ -54,8 +54,12 @@ class _RegsiterPageState extends State<RegsiterPage> {
                     if(!snapshot.hasData){
                       return null;
                     }
-                    bloc.submit();
-                  },//snapshot.hasData?bloc.submit:null,
+                    else{
+                     
+                       
+                      return bloc.submit(context);
+                    }
+                  },
                   child: Text("Register"),
                 ),
               ),
